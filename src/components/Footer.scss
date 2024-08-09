@@ -1,0 +1,21 @@
+footer {
+    padding: 8px;
+    margin: 96px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .more-details {
+        display: flex;
+        gap: 100px;
+
+        .details-head {
+            font-weight: 600;
+        }
+    }
+
+    .social {
+        display: flex;
+        gap: 16px;
+    }
+}
