@@ -3,3 +3,19 @@
   margin: 0;
   padding: 0;
 }
+
+.reach-out-btn {
+  background-color: #3D5938;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+}
+
+.know-more-btn {
+  color: black;
+  border-radius: 8px;
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid black;
+  margin-left: 16px;
+}

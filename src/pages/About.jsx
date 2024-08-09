@@ -1,8 +1,13 @@
-import React from 'react';
+import React from "react";
+import OurQualities from "../components/OurQualities";
 
 function About() {
   return (
-    <div>About</div>
+    <div className="about-pg-ct">
+      <div className="qualities-ct">
+        <OurQualities />
+      </div>
+    </div>
   );
 }
 
