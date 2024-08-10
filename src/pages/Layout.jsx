@@ -9,6 +9,7 @@ function Layout() {
         <main>
           <Outlet />
         </main>
+        <div className="border footer-top-border"></div>
         <Footer />
     </div>
   );

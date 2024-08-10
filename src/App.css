@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -57,4 +58,15 @@
   padding: 8px 16px;
   border: 1px solid black;
   margin-left: 16px;
+}
+
+.footer-top-border {
+  border-color: #949494 !important;
+  width: 80%;
+  margin: auto;
+  margin-top: 96px;
+}
+
+.cl-red {
+  color: #FF5F5F;
 }

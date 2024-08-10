@@ -1,8 +1,11 @@
 import React from 'react';
+import FormComponent from '../FormComponent';
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <FormComponent />
+    </div>
   );
 }
 

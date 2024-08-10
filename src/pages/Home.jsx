@@ -1,7 +1,10 @@
 import React from "react";
 import "./Home.scss";
 import organic from "../assets/organic.svg";
+import curvedEllipse from "../assets/curved-ellipse.svg";
+import smile from "../assets/smile.svg";
 import OurQualities from "../components/OurQualities";
+
 
 function Home() {
   return (
@@ -21,6 +24,13 @@ function Home() {
 
       <div className="qualities-ct">
         <OurQualities />
+        <div className="floating-ct">
+          <img src={curvedEllipse} alt="curved ellipse" />
+          <div>
+            <img src={smile} alt="smile" />
+            <p>Your taste buds will thank you—and so will your <span className="cl-red">dinner guests</span></p>
+          </div>
+        </div>
       </div>
     </div>
   );
