@@ -16,10 +16,6 @@
         .tagline2 {
             font-size: 64px;
             font-weight: 800;
-
-            .cl-lg_green {
-                color: #3A5C38;
-            }
         }
 
         .btns-ct {
@@ -33,12 +29,54 @@
         justify-content: flex-start;
         position: relative;
 
-        .floating-ct{
+        .floating-ct {
             position: absolute;
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+            width: 320px;
+
+            .smile{
+                font-size: 36px;
+            }
+
+            .content-ct {
+                position: absolute;
+                top: 15%;
+                left: 20%;
+                text-align: center;
+                transform: rotate(-10deg);
+                color: #767676;
+            }
+        }
+    }
+
+    .why-us{
+        width: 90%;
+        margin: 72px;
+        h2{
+            color: #3A5C38;
+            // margin-left: 16px;
+
+            &::before{
+                content: "";
+                border-right: 4px solid #FADABF;
+                margin-right: 16px;
+            }
+        }
+        p{
+            margin: 0;
+            margin-left: 20px;
+            color: #000000;
+        }
+    }
+
+    .subscribe{
+        margin: 36px;
+        width: 500px;
+        text-align: center;
+        h2{
+            margin-bottom: 32px;
         }
     }
 }
-
