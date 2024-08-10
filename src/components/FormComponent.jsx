@@ -1,9 +1,13 @@
 import React from 'react';
 import './FormComponent.css';
+import pepperPlaceholder from '../assets/pepper-placeholder.svg';
+import productPlaceholder from '../assets/product-thumb3.svg'; 
 
 function FormComponent() {
   return (
     <div className="container mt-5 text-center">
+    <img src={pepperPlaceholder} className="pepper-image" />
+    <img src={productPlaceholder} className="product-image" />
     <h1 className='mb-5' style={{color: "black", fontWeight: "bold"}}> Contact us </h1>
       <div className="card" style={{ width: '500px', margin: 'auto', padding: '20px', borderRadius: '10px' , borderColor: '#757575'}}>
         <div className="card-body">

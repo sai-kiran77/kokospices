@@ -29,3 +29,16 @@
 .btn-clr{
   background-color: #3A5C38;
 }
+
+.pepper-image{
+  position: absolute;
+  left: -100px;
+  height: 250px;
+}
+
+.product-image{
+  position: absolute;
+  right: 0px;
+  bottom: 250px;
+  height: 300px;
+}
