@@ -33,7 +33,9 @@ function FormComponent() {
               <input type="text" className="form-control message" />
             </div>
             <div class="d-grid gap-2 col-12 mx-auto">
-              <button class="btn btn-success btn-clr" type="button">Submit</button>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqceO8ZHTojkXtHTZbOUjEhlo1G75JAppwUL_RHOc323rC6A/viewform?usp=sf_link" target='_blank'>
+               <button class="btn btn-success btn-clr" type="button">Submit</button>
+              </a>
             </div>
           </form>
         </div>
