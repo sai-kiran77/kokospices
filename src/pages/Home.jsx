@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.scss";
 import organic from "../assets/organic.svg";
 import curvedEllipse from "../assets/curved-ellipse.svg";
@@ -10,6 +10,10 @@ import cinnamon from "../assets/cinnamon.svg";
 import cardamonProduct from "../assets/cardamon-product.svg";
 import processingImg1 from "../assets/processing-step-placeholder1.svg";
 import processingImg2 from "../assets/processing-step-placeholder2.svg";
+import processingStep1 from "../assets/processing-step-1.svg";
+import processingStep2 from "../assets/processing-step-2.svg";
+import processingStep3 from "../assets/processing-step-3.svg";
+import processingStep4 from "../assets/processing-step-4.svg";
 import cardamon from "../assets/cardamon.svg";
 import Product from "../components/Product";
 
@@ -36,7 +40,28 @@ const ourProducts = [
   },
 ];
 
+const spicesProcessingSteps = [
+  {
+    title: "Carefully picked",
+    image: processingStep1,
+  },
+  {
+    title: "Freshly Processes",
+    image: processingStep2,
+  },
+  {
+    title: "Securely Packed",
+    image: processingStep3,
+  },
+  {
+    title: "Fast delivery",
+    image: processingStep4,
+  },
+];
+
 function Home() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div className="home-pg-ct">
       <div className="section-1-ct">
@@ -104,7 +129,7 @@ function Home() {
         </div>
       </div>
 
-      {/* <div className="processing-steps">
+      <div className="processing-steps">
         <div className="content-container">
           <h2>Spice Processing Steps</h2>
           <p>
@@ -112,11 +137,25 @@ function Home() {
             International ? Reach out and savor the witty goodness of taste and
             health. Your taste buds—and dinner guests—will thank you!
           </p>
-          <img src={processingImg1} alt="processing 1" />
-          <img src={processingImg2} alt="processing 1" />
-
         </div>
-      </div> */}
+        <img className="processing-1" src={processingImg1} alt="processing 1" />
+        <img className="processing-2" src={processingImg2} alt="processing 1" />
+
+        <div className="grid-container">
+          {spicesProcessingSteps.map((obj, i) => {
+            return (
+              <div
+                key={i}
+                className={`step-ct ${i == activeIndex ? 'active' : ''}`}
+                onClick={() => setActiveIndex(i)}
+              >
+                <img src={obj.image} alt={obj.title} />
+                <div className="title">{obj.title}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       <div className="products-ct">
         <h2>Our Product Range</h2>
