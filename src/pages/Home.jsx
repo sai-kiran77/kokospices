@@ -16,6 +16,7 @@ import processingStep3 from "../assets/processing-step-3.svg";
 import processingStep4 from "../assets/processing-step-4.svg";
 import cardamon from "../assets/cardamon.svg";
 import Product from "../components/Product";
+import { Link } from 'react-router-dom';
 
 const ourProducts = [
   {
@@ -73,8 +74,12 @@ function Home() {
             <span className="cl-lg_green">Seasoning</span>
           </h3>
           <div className="btns-ct">
-            <button className="reach-out-btn">Reach Out</button>
-            <button className="know-more-btn">Know More</button>
+            <Link className='link' to="/contact">
+              <button className="reach-out-btn">Reach Out</button>
+            </Link>
+            <Link className='link' to="/about">
+              <button className="know-more-btn">Know More</button>
+            </Link>
           </div>
         </div>
         <img
