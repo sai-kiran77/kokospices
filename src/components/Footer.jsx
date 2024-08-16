@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import instagram from '../assets/instagram.svg';
-import twitter from '../assets/twitter.svg';
-import logo from '../assets/logo.svg';
-import './Footer.scss';
+import instagram from "../assets/instagram.svg";
+import twitter from "../assets/twitter.svg";
+import logo from "../assets/logo.svg";
+import "./Footer.scss";
 
 function Footer() {
   return (
@@ -18,8 +18,12 @@ function Footer() {
         <div>
           <div className="details-head">Phone no</div>
           <div className="details-body">
-            <div>+9188770573</div>
-            <div>+919496732996</div>
+            <div>
+              <a href="tel:+919188770573">+91 9188770573</a>
+            </div>
+            <div>
+              <a href="tel:+919496732996">+91 9496732996</a>
+            </div>
           </div>
         </div>
         <div>
