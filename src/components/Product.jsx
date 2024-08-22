@@ -9,8 +9,8 @@ function Product(props) {
     <div className="product-card">
       <img height={120} width={120} src={props.image} alt={props.title} />
       <div className="product-title">{props.title}</div>
-      <div className="product-desc">{props.desc}</div>
-      <Link className="link" to="/contact">
+      <div className="product-desc ellipsis-text-clamp-4" title={props.desc}>{props.desc}</div>
+      <Link className="link mt-auto" to="/contact">
         <button className="more-details-btn">
           <span>More Details</span>
           <img src={rightArrowIcon} alt="Right Arrow" />

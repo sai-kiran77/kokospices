@@ -8,6 +8,8 @@ import pepperProduct from "../assets/product-pepper.svg";
 import cinnamonProduct from "../assets/product-cinnamon.svg";
 import cinnamon from "../assets/cinnamon.svg";
 import cardamonProduct from "../assets/cardamon-product.svg";
+import turmeric from "../assets/turmeric.svg";
+import ginger from "../assets/ginger.svg";
 import processingImg1 from "../assets/processing-step-placeholder1.svg";
 import processingImg2 from "../assets/processing-step-placeholder2.svg";
 import processingStep1 from "../assets/processing-step-1.svg";
@@ -20,24 +22,29 @@ import { Link } from 'react-router-dom';
 
 const ourProducts = [
   {
-    image: pepperProduct,
-    desc: "Native to the Malabar Coast of India, black pepper is now cultivated in tropical regions, with major producers including Vietnam, Indonesia, and Brazil.",
-    title: "Black Pepper",
-  },
-  {
     image: cinnamonProduct,
-    desc: "Native to the Malabar Coast of India, black pepper is now cultivated in tropical regions, with major producers including Vietnam, Indonesia, and Brazil.",
+    desc: "Cinnamon is used mainly as an aromatic condiment and flavouring additive in a wide variety of cuisines, sweet and savoury dishes, breakfast cereals, snack foods, bagels, teas, hot chocolate and traditional foods",
     title: "Cinnamon",
   },
   {
-    image: cardamonProduct,
-    desc: "Native to the Malabar Coast of India, black pepper is now cultivated in tropical regions, with major producers including Vietnam, Indonesia, and Brazil.",
-    title: "Clove",
+    image: pepperProduct,
+    desc: "Native to the Malabar Coast of India, black pepper is now cultivated in tropical regions, with major producers including Vietnam, Indonesia, and Brazil",
+    title: "Black Pepper",
   },
   {
     image: cardamonProduct,
-    desc: "Native to the Malabar Coast of India, black pepper is now cultivated in tropical regions, with major producers including Vietnam, Indonesia, and Brazil.",
+    desc: "Cardamom is an herb that is often used as a spice in foods. The seeds and the oil from the seeds are sometimes used to make medicine. Cardamom contains chemicals that might kill some bacteria, reduce swelling, and help the immune system",
     title: "Cardamon",
+  },
+  {
+    image: ginger,
+    desc: "Ginger, a rhizome with a spicy, pungent flavor, has been used for centuries to alleviate various ailments, It is rich in antioxidants and bioactive compounds",
+    title: "Ginger",
+  },
+  {
+    image: turmeric,
+    desc: "Turmeric, a golden-yellow spice with a slightly bitter taste, is known for its curcumin content, a potent antioxidant and anti-inflammatory compound. Turmeric has been linked to numerous health benefits",
+    title: "Turmeric",
   },
 ];
 

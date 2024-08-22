@@ -25,4 +25,13 @@
         color: #3A5C38;
         cursor: pointer;
     }
+
+    .ellipsis-text-clamp-4 {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
 }
