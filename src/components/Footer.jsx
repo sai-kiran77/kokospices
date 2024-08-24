@@ -25,6 +25,13 @@ function Footer() {
               <a href="tel:+919496732996">+91 9496732996</a>
             </div>
           </div>
+
+          <div className="details-head mt-3">Email</div>
+          <div className="details-body">
+            <div>
+              <a href="mailto:sajan@jsinternation.co">sajan@jsinternation.co</a>
+            </div>
+          </div>
         </div>
         <div>
           <div className="details-head">Address</div>

@@ -77,8 +77,8 @@ function Home() {
           <img width={75} height={75} src={organic} alt="organic" />
           <p className="tagline1">Our Best of world class spices</p>
           <h3 className="tagline2">
-            Exquisite <span className="cl-red">Spices</span> and{" "}
-            <span className="cl-lg_green">Seasoning</span>
+            <div style={{whiteSpace: "nowrap"}}>Exquisite <span className="cl-red">Spices</span></div>
+             <div style={{whiteSpace: "nowrap"}}>and <span className="cl-lg_green">Seasoning</span></div>
           </h3>
           <div className="btns-ct">
             <Link className='link' to="/contact">
