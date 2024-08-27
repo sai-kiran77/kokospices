@@ -29,7 +29,7 @@ function Footer() {
           <div className="details-head mt-3">Email</div>
           <div className="details-body">
             <div>
-              <a href="mailto:info@jsinternational.co">sajan@jsinternational.co</a>
+              <a href="mailto:info@jsinternational.co">info@jsinternational.co</a>
             </div>
           </div>
         </div>
